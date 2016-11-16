@@ -1,0 +1,49 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"username": "corbanb",
+			"name": "Corban Baxter",
+			"email": "corban@barbershop.io",
+			"phone": "303-882-1359",
+			"company": {
+				"name": "Barbershop",
+				"address_line_1": "3839 Jackson St.",
+				"address_line_2": "",
+				"city": "Denver",
+				"state": "Colorado",
+				"zip_code": "80205"
+			}
+		},
+		{
+			"id": 2,
+			"username": "jayf",
+			"name": "Jay Ferracane",
+			"email": "jay@angrybovine.com",
+			"phone": "650-380-0893",
+			"company": {
+				"name": "Angry Bovine",
+				"address_line_1": "",
+				"address_line_2": "",
+				"city": "Boulder",
+				"state": "Colorado",
+				"zip_code": "80201"
+			}
+		}
+	],
+	"messages": [
+		{
+			"id": 1,
+			"message": "Code for life.",
+			"sender": 1,
+			"recipient": 2
+		},
+		{
+			"id": 2,
+			"message": "Design for life.",
+			"sender": 2,
+			"recipient": 1
+		}
+	]
+
+}
