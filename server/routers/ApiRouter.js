@@ -1,3 +1,4 @@
+var database = require('../data/database');
 var paramparser = require('../helpers/ParamParser');
 var userController = require('../controllers/UserController');
 var msgController = require('../controllers/MessageController');
@@ -15,5 +16,10 @@ module.exports = function (express, app) {
 	router.get('/users/:username/company', userController.getCompany);
 	router.get('/users/:username', userController.get);
 	router.get('/users', userController.list);
+
+	router.get('/data', function(request, response, next) {
+		response.json(database);
+	});
+
 	return router;
 };
